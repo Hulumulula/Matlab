@@ -1,0 +1,11 @@
+clear,clc;
+n = 3;
+m = 4;
+a = [3 3 1 3];
+c = [2 2 4; 2 4 6; 2 5 3];
+S1 = sum(a)^2;
+S2 = sum(sum(c.*c));
+S3 = sum(sum(c));
+S4 = sum(a.*a);
+S = S1 + S2 - (3 + S3)*(1 + S4);
+disp(S);
